@@ -1,6 +1,13 @@
 public class Basics {
     public static void main(String[] args) {
         SmartPhone s1 = new SmartPhone(); // s1 is a reference variable
+
+        // Default values
+        System.out.println(s1.name); // null
+        System.out.println(s1.price); // 0.0
+        System.out.println(s1.brand); // null
+
+        // Set values
         s1.name = "Samsung M12";
         s1.price = 20000;
         s1.brand = "Samsung";
@@ -22,7 +29,7 @@ class SmartPhone {
     double price;
     String brand;
 
-    // methods (behaviour)
+    // methods (behaviour + additional functionality(like displaying, ...))
     void makeCall(SmartPhone other) {
         System.out.println("Calling " + other.name);
     }
@@ -30,5 +37,29 @@ class SmartPhone {
     void displayDetails() {
         System.out.println("Product: " + name);
         System.out.println("Price: " + price);
+    }
+}
+
+class BankAccount {
+    // properties (attributes)
+    String accountNumber;
+    String owner;
+    double balance;
+
+    // methods (behaviour + additional functionality(like displaying, ...))
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposited $" + amount + " | New balance: $" + balance);
+        }
+    }
+
+    public void withdraw(double amount) {
+        if (amount > balance) {
+            System.out.println("Insufficient funds.");
+        } else {
+            balance -= amount;
+            System.out.println("Withdrew $" + amount + " | New balance: $" + balance);
+        }
     }
 }
