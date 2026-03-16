@@ -6,9 +6,9 @@ public class TypeConversions {
         // Implicit Type Conversion -> Handled by java compiler
         // All Widening Conversions(size of destination datatype > size of source datatype) are Implicit.
         // Example 1 : (byte -> int)
-        byte b = 124;
+        byte b = -25; // 1 1 1 0 0 1 1 1 ( 2's complement)
         int i;
-        i = b;
+        i = b; // 11111111 11111111 11111111 11100111 ( prepend with 1's )
         System.out.println(i);
 
         // Example 2 : (char -> int)
