@@ -31,7 +31,7 @@ abstract class Animal {
 
 class Dog extends Animal {
     @Override
-    public void run() { System.out.println("Dog runs on 4 legs"); }
+    void run() { System.out.println("Dog runs on 4 legs"); }
 }
 
 class Duck extends Animal {

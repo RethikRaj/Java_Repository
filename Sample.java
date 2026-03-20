@@ -21,3 +21,12 @@ final class Integer {
     // Compares value equality
     public boolean equals(Integer y) { return this.value == y.value; }
 }
+
+
+abstract class A {
+   public static abstract void fun();
+}
+
+class B extends A {
+
+}
