@@ -1,6 +1,7 @@
 public class Sample {
     public static void main(String[] args) {
-        
+        B b = new B();
+        B.method1();
     }
 }
 
@@ -23,9 +24,12 @@ final class Integer {
 }
 
 
-abstract class A {
-   public static abstract void fun();
+class A {
+    static void method1() {
+        System.out.println("A.method1()");
+    }
 }
+
 
 class B extends A {
 
