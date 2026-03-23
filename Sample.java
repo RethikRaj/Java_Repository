@@ -2,6 +2,8 @@ public class Sample {
     public static void main(String[] args) {
         B b = new B();
         B.method1();
+
+        Object o = new Object();
     }
 }
 
