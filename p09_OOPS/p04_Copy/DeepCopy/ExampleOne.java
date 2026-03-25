@@ -52,8 +52,12 @@ class Car implements Cloneable {
 
     // Method 1 to do deep copy
     Car(Car other) {
+        // way 1
         this.year = other.year;
         this.engine = new Engine(other.engine); // deep copy
+
+        // way 2
+        // this(other.year, new Engine(other.engine));
     }
 
     // Method 2 to do deep copy
