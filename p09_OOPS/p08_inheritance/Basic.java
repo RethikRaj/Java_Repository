@@ -14,8 +14,8 @@ public class Basic {
 
         // Downcasting — getting back the child type from parent reference
         // *Using the p3 reference variable, we can access all members of both CreditCardPayment and Payment classes, since p3 is of the child type. The overridden process() method still runs the child's version — polymorphism is retained after downcasting.
-        CreditCardPayment p3 = (CreditCardPayment) p2;
-        p3.printReceipt();
+        CreditCardPayment c1 = (CreditCardPayment) p2;
+        c1.printReceipt();
     }
 }
 

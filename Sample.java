@@ -1,9 +1,13 @@
 public class Sample {
     public static void main(String[] args) {
-        B b = new B();
-        B.method1();
+        Object o = "Hello";
 
-        Object o = new Object();
+        // Downcasting
+        // String s = o; // compile time error : Cannot convert from Object to String
+
+        Integer i = (Integer) o;
+        System.out.println(i);
+
     }
 }
 
@@ -25,14 +29,3 @@ final class Integer {
     public boolean equals(Integer y) { return this.value == y.value; }
 }
 
-
-class A {
-    static void method1() {
-        System.out.println("A.method1()");
-    }
-}
-
-
-class B extends A {
-
-}
