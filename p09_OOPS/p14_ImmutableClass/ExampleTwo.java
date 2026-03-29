@@ -35,7 +35,7 @@ final class Student {
     public Student(int age, String name,College college) {
         this.age = age;
         this.name = name;
-        this.college = college; // shallow copy
+        this.college = college; // reference copy
     }
 
     // getters
@@ -48,7 +48,7 @@ final class Student {
     }
 
     public College getCollege() {
-        return this.college; // shallow copy.
+        return this.college; // reference copy
     }
 }
 
