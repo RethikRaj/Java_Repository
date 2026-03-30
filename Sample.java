@@ -28,5 +28,4 @@ final class Integer {
     // Compares value equality
     public boolean equals(Integer y) { return this.value == y.value; }
 }
-
-class 
+ 

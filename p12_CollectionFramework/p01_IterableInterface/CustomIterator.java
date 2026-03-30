@@ -51,5 +51,4 @@ class NamesContainer implements Iterable<String> {
             }
         };
     }
-    
 }
