@@ -1,12 +1,24 @@
+import java.util.*;
+
 public class Sample {
     public static void main(String[] args) {
-        Object o = "Hello";
+        // Object o = "Hello";
 
-        // Downcasting
-        // String s = o; // compile time error : Cannot convert from Object to String
+        // // Downcasting
+        // // String s = o; // compile time error : Cannot convert from Object to String
 
-        Integer i = (Integer) o;
-        System.out.println(i);
+        // Integer i = (Integer) o;
+        // System.out.println(i);
+
+        Map<Integer, Integer> mp = new HashMap<>();
+
+        mp.containsKey(1);
+
+        // mp.put(1, 2);
+
+        System.out.println(mp.get(1));
+
+        
 
     }
 }
