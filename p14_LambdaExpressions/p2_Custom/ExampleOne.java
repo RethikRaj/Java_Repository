@@ -38,7 +38,7 @@ class EmployeeProcessor {
     }
 }
 
-public class Main {
+public class ExampleOne {
     public static void main(String[] args) {
         List<Employee> employees = List.of(
             new Employee("Alice",   "Engineering", 95000),
