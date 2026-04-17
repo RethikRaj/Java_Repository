@@ -24,6 +24,10 @@ public class FlatMapIntermediateOperationDemo {
                  .flatMap(s -> Arrays.stream(s.split(" ")))
                  .forEach(w -> System.out.print(w + " "));
         System.out.println();
+
+        // The tell-tale sign you need flatMap instead of map: if your lambda returns something iterable (an array, a list, a stream), you almost certainly want flatMap. map is for one-to-one transformations; flatMap is for one-to-many.
+        // map : 3 sentences => 3 String[] (string arr) objects after split
+        // flatmap : 3 sentences => 6 individual string 
        
     }
 }
